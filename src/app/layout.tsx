@@ -14,9 +14,13 @@ export const metadata: Metadata = {
   description: "وكالة Power Media للتسويق الرقمي - نقدم حلول متكاملة لتحسين وجودك على الإنترنت",
   icons: {
     icon: "/project/logo.png",
-  }
+    apple: "/project/logo.png",
+  },
+  manifest: "/manifest.json",
 }
-
+export const viewport = {
+  themeColor: "#000000",
+};
 export default function RootLayout({
   children,
 }: {
