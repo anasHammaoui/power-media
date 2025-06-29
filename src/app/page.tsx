@@ -53,13 +53,13 @@ export default function HomePage() {
           {isMenuOpen && (
             <div className="md:hidden mt-4">
               <div className="flex flex-col items-center gap-4 bg-gray-50 p-6 rounded-lg shadow-md">
-                <a href="#" className="text-gray-700 hover:text-purple-600" onClick={() => setIsMenuOpen(false)}>
+                <a href="#home" className="text-gray-700 hover:text-purple-600" onClick={() => setIsMenuOpen(false)}>
                   الصفحة الرئيسية
                 </a>
-                <a href="#" className="text-gray-700 hover:text-purple-600" onClick={() => setIsMenuOpen(false)}>
+                <a href="#about" className="text-gray-700 hover:text-purple-600" onClick={() => setIsMenuOpen(false)}>
                   من نحن
                 </a>
-                <a href="#" className="text-gray-700 hover:text-purple-600" onClick={() => setIsMenuOpen(false)}>
+                <a href="#contact" className="text-gray-700 hover:text-purple-600" onClick={() => setIsMenuOpen(false)}>
                   تواصل معنا
                 </a>
               </div>
