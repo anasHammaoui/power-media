@@ -8,7 +8,9 @@ import { Users, FileText, Lightbulb, Phone, Facebook, Instagram, Menu, X } from 
 export default function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-
+  const contact = () => {
+    window.location.href = "https://wa.me/0653165179"
+  }
   return (
     <div className="min-h-screen bg-white overflow-x-hidden" dir="rtl">
       {/* Header */}
@@ -205,7 +207,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">متشوقون للعمل معكم</h2>
           <p className="text-xl text-gray-600 mb-12">نود أن نسمع عن مشروعك ونعلم</p>
-          <Button className="bg-green-500 cursor-pointer hover:bg-green-600 text-white px-12 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
+          <Button onClick={contact} className="bg-green-500 cursor-pointer hover:bg-green-600 text-white px-12 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
             <Phone className="w-6 h-6 ml-3" />
             اتصل بنا
           </Button>
