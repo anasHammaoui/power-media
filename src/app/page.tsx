@@ -1,15 +1,12 @@
-"use client" // This is required for using React Hooks like useState.
+"use client" 
 
-import { useState } from "react" // Import useState for managing component state.
+import { useState } from "react"
 import Image from "next/image"
 import Button from "./components/button"
-// Imported Menu and X icons for the mobile navigation.
 import { Users, FileText, Lightbulb, Phone, Facebook, Instagram, Menu, X } from "lucide-react"
 
 export default function HomePage() {
-  // State to manage the visibility of the mobile menu.
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  // State to store the URL of the image selected for full-screen view. null means the lightbox is closed.
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   return (

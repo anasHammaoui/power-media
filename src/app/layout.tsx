@@ -12,6 +12,9 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   title: "Power Media - وكالة التسويق الرقمي",
   description: "وكالة Power Media للتسويق الرقمي - نقدم حلول متكاملة لتحسين وجودك على الإنترنت",
+  icons: {
+    icon: "/project/logo.png",
+  }
 }
 
 export default function RootLayout({
